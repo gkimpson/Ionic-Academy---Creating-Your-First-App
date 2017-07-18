@@ -7,8 +7,8 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
   title = 'Calculator'; 
-  num1 = 19;
-  num2 = 5;
+  num1 = '19';
+  num2 = '5'; 
   result = 0;
 
   constructor(public navCtrl: NavController) {
@@ -16,7 +16,7 @@ export class HomePage {
   }
 
   calculate() {
-    return this.result = this.num1 + this.num2;
+    this.result = parseInt(this.num1) + parseInt(this.num2);
   }
 
 }
