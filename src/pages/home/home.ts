@@ -6,17 +6,12 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  title = 'Calculator'; 
-  num1 = '19';
-  num2 = '5'; 
-  result = 0;
+  title = 'Looping through data';
+  myArray = ['this', 'is', 'my', 'first', 'ngFor'];
 
   constructor(public navCtrl: NavController) {
 
   }
 
-  calculate() {
-    this.result = parseInt(this.num1) + parseInt(this.num2);
-  }
 
 }
