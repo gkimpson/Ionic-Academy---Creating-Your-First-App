@@ -6,9 +6,17 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
- title = 'This is the name of my app'; 
+  title = 'Calculator'; 
+  num1 = 19;
+  num2 = 5;
+  result = 0;
+
   constructor(public navCtrl: NavController) {
 
+  }
+
+  calculate() {
+    return this.result = this.num1 + this.num2;
   }
 
 }
